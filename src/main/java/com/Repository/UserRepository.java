@@ -1,4 +1,4 @@
-package com;
+package com.Repository;
 
 import com.Entities.Boy;
 import org.springframework.data.repository.CrudRepository;
