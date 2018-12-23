@@ -14,7 +14,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Service("NationServiceImpl")
-public class NationServiceImpl implements NationCurrencyService {
+public class NationServiceImpl implements NationService {
     @Autowired
     private NationRepository nationRepository;
 
