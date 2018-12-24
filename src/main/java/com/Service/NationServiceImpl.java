@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -39,8 +39,8 @@ public class NationServiceImpl implements NationService {
     }
 
     @Override
-    public List<NationCurrency> getallNationCurrency() {
-        return (List<NationCurrency>) nationRepository.findAll();
+    public ArrayList<NationCurrency> getallNationCurrency() {
+        return (ArrayList<NationCurrency>) nationRepository.findAll();
     }
 
     private NationCurrency getNation(String text, String regex) {
